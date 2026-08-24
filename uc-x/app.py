@@ -158,7 +158,7 @@ def answer_question(question: str, indexed_docs: dict) -> str:
 
 def main():
     print("=" * 70)
-    print("CITY MUNICIPAL CORPORATION — POLICY DOCUMENT Q&A SYSTEM")
+    print("CITY MUNICIPAL CORPORATION - POLICY DOCUMENT Q&A SYSTEM")
     print("=" * 70)
     print("\nLoading policy documents...")
     

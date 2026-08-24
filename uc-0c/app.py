@@ -49,7 +49,7 @@ def load_dataset(input_path):
     
     # Report nulls
     if nulls:
-        print(f"\n⚠ WARNING: Found {len(nulls)} null actual_spend values:")
+        print(f"\n[WARNING] Found {len(nulls)} null actual_spend values:")
         for null in nulls:
             print(f"  {null['period']} · {null['ward']} · {null['category']}")
             print(f"    Reason: {null['notes']}")
@@ -202,8 +202,8 @@ def main():
         writer.writeheader()
         writer.writerows(results)
     
-    print(f"✓ Results written to {args.output}")
-    print(f"✓ Computed {len(results)} periods with {sum(1 for r in results if r['growth_pct'])} valid growth calculations")
+    print(f"[OK] Results written to {args.output}")
+    print(f"[OK] Computed {len(results)} periods with {sum(1 for r in results if r['growth_pct'])} valid growth calculations")
 
 
 if __name__ == "__main__":
